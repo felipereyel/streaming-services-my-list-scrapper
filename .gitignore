@@ -1,2 +1,4 @@
 chromedriver
 .vscode
+credentials.json
+*__pycache__
