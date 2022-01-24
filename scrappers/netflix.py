@@ -10,7 +10,7 @@ import os
 
 def run(email, password, profile):
     chrome_options = Options()
-    ## chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--headless")
     driver = webdriver.Chrome("./chromedriver", options=chrome_options)
     driver.get("https://www.netflix.com/browse/my-list")
 
@@ -37,9 +37,8 @@ def run(email, password, profile):
         raise Exception("Profile not found")
     sleep(2)
 
-    logo = driver.find_element(By.CLASS_NAME, "logo")
-    for n in range(1, 3):
-        logo.send_keys(Keys.END)
+    for n in range(2):
+        driver.execute_script("window.scrollTo(0, document.body.scrollHeight)")
         sleep(1)
 
     # my list:

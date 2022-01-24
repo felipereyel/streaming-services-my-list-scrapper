@@ -5,11 +5,11 @@
 ### Done
 
 - Netflix
+- Prime Video
 
 ## TBD
 
-- Prime Video (next)
-- HBO Max
+- HBO Max (next)
 - Disney Plus
 - Globoplay
 - Claro NOW
@@ -25,6 +25,7 @@ The scrapper will run for every provider listed on this credentials file.
 Accepted provider keys:
 
 - `netflix`
+- `primevideo`
 
 ## Credits
 
